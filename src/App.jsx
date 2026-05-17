@@ -54,9 +54,9 @@ export default function App() {
           <span className={styles.logoIcon} aria-hidden="true">
             <Palette size={28} strokeWidth={2} />
           </span>
-          <h1 className={styles.logo}>Gradient &amp; Palette</h1>
+          <h1 className={styles.logo}>HueLab</h1>
         </div>
-        <p className={styles.tagline}>Gere gradientes e paletas de cores em tempo real</p>
+        <p className={styles.tagline}>Gradient &amp; Palette Generator</p>
 
         <button
           className={`${styles.shareBtn} ${shareCopied ? styles.copied : ''}`}

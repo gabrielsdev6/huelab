@@ -16,7 +16,7 @@ export function AboutHero() {
   return (
     <section className={styles.intro} aria-label="Introdução">
       <p className={styles.eyebrow}>Ferramenta open-source para devs e designers</p>
-      <h2 className={styles.heading}>Crie paletas e gradientes prontos para produção</h2>
+      <h2 className={styles.heading}>HueLab — Crie paletas e gradientes prontos para produção</h2>
       <p className={styles.text}>
         Gere, visualize e exporte gradientes e paletas de cores em tempo real.
         Tudo roda no browser — sem backend, sem conta, sem dados salvos.
