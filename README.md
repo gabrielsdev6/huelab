@@ -1,16 +1,76 @@
-# React + Vite
+# 🎨 HueLab — Gradient & Palette Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A interactive tool for designers and developers to generate gradients and color palettes with real-time preview — ready for production use.
 
-Currently, two official plugins are available:
+**[Live Demo →](https://huelab.vercel.app)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Gradient Generator** — Linear, radial and conic gradients with 2–4 colors, angle control and randomize
+- **Palette Generator** — 5 harmonic colors from a base color with 4 harmony types (complementary, analogous, triadic, monochromatic)
+- **Live Preview** — See colors applied on real UI components (navbar, hero, card, buttons) with dark/light toggle
+- **Multiple Export Formats** — Copy as plain CSS, CSS custom properties, Tailwind classes or JavaScript object
+- **WCAG Contrast Checker** — Automatic accessibility rating (AA / AAA / Fail) for every color pair
+- **Shareable URL** — Every combination generates a unique URL to share your design
+- **Preset Gallery** — 12 handcrafted gradient presets for quick inspiration
+- **Session History** — Last 6 generated gradients saved as thumbnails, click to restore
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| | |
+|---|---|
+| Framework | React 18 + Vite |
+| Color logic | chroma.js |
+| Icons | Lucide React |
+| Styling | CSS Modules |
+| Deploy | Vercel |
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/gabrielsdev6/huelab.git
+cd huelab
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Build
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+├── components/        # UI components
+│   ├── GradientGenerator
+│   ├── PaletteGenerator
+│   ├── LivePreview
+│   ├── ExportFormats
+│   ├── ContrastChecker
+│   ├── GradientPresets
+│   ├── GradientHistory
+│   └── AboutSection
+├── hooks/             # useGradient, usePalette
+├── utils/             # colors, contrast, url helpers
+└── data/              # gradient presets
+```
+
+## Author
+
+**Gabriel Pereira** — [@gabrielsdev6](https://github.com/gabrielsdev6)
+
+---
+
+*Built with React + chroma.js*
