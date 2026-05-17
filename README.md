@@ -2,7 +2,7 @@
 
 Ferramenta interativa para designers e desenvolvedores criarem gradientes e paletas de cores com visualização em tempo real — pronto para uso em produção.
 
-**[Ver Demo →](https://huelab.vercel.app)**
+**[Ver Demo →](https://huelabcolors.vercel.app)**
 
 ---
 
