@@ -1,0 +1,148 @@
+.card {
+  background: var(--color-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-foreground);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.iconBtn {
+  background: rgba(255,255,255,0.07);
+  color: var(--color-muted);
+  border-radius: var(--radius-sm);
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  transition: color var(--transition), background var(--transition), border-color var(--transition);
+}
+
+.iconBtn:hover {
+  color: var(--color-foreground);
+  background: rgba(167, 139, 250, 0.15);
+  border-color: var(--color-border-hover);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.baseRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.colorInput {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 2px solid var(--color-border);
+  transition: border-color var(--transition);
+  flex-shrink: 0;
+}
+
+.colorInput:hover {
+  border-color: var(--color-accent);
+}
+
+.hex {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  font-family: monospace;
+}
+
+.harmonyGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.harmonyBtn {
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.05);
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px solid var(--color-border);
+  transition: all var(--transition);
+}
+
+.harmonyBtn:hover {
+  color: var(--color-foreground);
+  border-color: var(--color-border-hover);
+}
+
+.harmonyBtn.active {
+  background: linear-gradient(135deg, rgba(167,139,250,0.25), rgba(244,114,182,0.2));
+  color: var(--color-accent);
+  border-color: rgba(167,139,250,0.5);
+}
+
+.swatchList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.swatch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+  min-height: 44px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.swatch:hover {
+  transform: translateX(4px);
+  box-shadow: -4px 0 12px rgba(167, 139, 250, 0.2);
+}
+
+.swatchHex {
+  font-size: 0.8rem;
+  font-family: monospace;
+  font-weight: 600;
+  mix-blend-mode: difference;
+  color: white;
+}
+
+.swatchIcon {
+  color: white;
+  mix-blend-mode: difference;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,209 @@
+.card {
+  background: var(--color-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-foreground);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.iconBtn {
+  background: rgba(255,255,255,0.07);
+  color: var(--color-muted);
+  border-radius: var(--radius-sm);
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  transition: color var(--transition), background var(--transition), border-color var(--transition);
+}
+
+.iconBtn:hover {
+  color: var(--color-foreground);
+  background: rgba(167, 139, 250, 0.15);
+  border-color: var(--color-border-hover);
+}
+
+.preview {
+  height: 120px;
+  border-radius: var(--radius-md);
+  transition: background var(--transition);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+
+.cssSnippet {
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  overflow-x: auto;
+}
+
+.cssCode {
+  font-size: 0.7rem;
+  color: var(--color-muted);
+  font-family: monospace;
+  white-space: nowrap;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.colorList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.colorRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.colorInput {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 2px solid var(--color-border);
+  transition: border-color var(--transition);
+  flex-shrink: 0;
+}
+
+.colorInput:hover {
+  border-color: var(--color-accent);
+}
+
+.hex {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  font-family: monospace;
+  flex: 1;
+}
+
+.removeBtn {
+  background: transparent;
+  color: var(--color-muted);
+  border-radius: var(--radius-sm);
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  transition: color var(--transition);
+  min-width: 28px;
+  min-height: 28px;
+  justify-content: center;
+}
+
+.removeBtn:hover {
+  color: #f87171;
+}
+
+.addBtn {
+  background: rgba(255,255,255,0.05);
+  color: var(--color-muted);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px dashed var(--color-border);
+  transition: color var(--transition), background var(--transition), border-color var(--transition);
+  align-self: flex-start;
+}
+
+.addBtn:hover {
+  color: var(--color-accent);
+  background: rgba(167, 139, 250, 0.08);
+  border-color: var(--color-accent);
+}
+
+.typeGroup {
+  display: flex;
+  gap: 6px;
+}
+
+.typeBtn {
+  flex: 1;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.05);
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px solid var(--color-border);
+  transition: all var(--transition);
+}
+
+.typeBtn:hover {
+  color: var(--color-foreground);
+  border-color: var(--color-border-hover);
+}
+
+.typeBtn.active {
+  background: linear-gradient(135deg, rgba(167,139,250,0.25), rgba(244,114,182,0.2));
+  color: var(--color-accent);
+  border-color: rgba(167,139,250,0.5);
+}
+
+.slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 99px;
+}
+
+.copyBtn {
+  background: linear-gradient(135deg, #a78bfa, #f472b6);
+  color: #07060f;
+  border-radius: var(--radius-md);
+  padding: 12px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: opacity var(--transition), transform var(--transition), box-shadow var(--transition);
+  box-shadow: 0 4px 20px rgba(167, 139, 250, 0.3);
+}
+
+.copyBtn:hover {
+  opacity: 0.92;
+  transform: scale(0.98);
+  box-shadow: 0 4px 28px rgba(167, 139, 250, 0.5);
+}
+
+.copyBtn.copied {
+  background: linear-gradient(135deg, #34d399, #059669);
+  box-shadow: 0 4px 20px rgba(52, 211, 153, 0.3);
+}

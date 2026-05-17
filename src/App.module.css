@@ -1,0 +1,124 @@
+.root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 24px 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logoIcon {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 12px rgba(167, 139, 250, 0.5));
+}
+
+.logo {
+  font-size: 2.4rem;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(135deg, #e0d7ff 0%, #a78bfa 40%, #f472b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  max-width: 420px;
+}
+
+.shareBtn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255,255,255,0.07);
+  color: var(--color-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 8px 18px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all var(--transition);
+  min-height: 44px;
+}
+
+.shareBtn:hover {
+  color: var(--color-foreground);
+  border-color: var(--color-border-hover);
+  background: rgba(167,139,250,0.1);
+}
+
+.shareBtn.copied {
+  color: #4ade80;
+  border-color: #4ade80;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+  flex: 1;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.3);
+  padding: 16px 0 8px;
+}
+
+.footerLink {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition);
+}
+
+.footerLink:hover {
+  color: var(--color-accent-2);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    padding: 28px 16px 20px;
+    gap: 24px;
+  }
+
+  .logo {
+    font-size: 1.7rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
