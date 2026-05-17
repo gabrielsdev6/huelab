@@ -1,59 +1,59 @@
-# 🎨 HueLab — Gradient & Palette Generator
+# 🎨 HueLab — Gerador de Gradientes e Paletas
 
-A interactive tool for designers and developers to generate gradients and color palettes with real-time preview — ready for production use.
+Ferramenta interativa para designers e desenvolvedores criarem gradientes e paletas de cores com visualização em tempo real — pronto para uso em produção.
 
-**[Live Demo →](https://huelab.vercel.app)**
+**[Ver Demo →](https://huelab.vercel.app)**
 
 ---
 
-## Features
+## Funcionalidades
 
-- **Gradient Generator** — Linear, radial and conic gradients with 2–4 colors, angle control and randomize
-- **Palette Generator** — 5 harmonic colors from a base color with 4 harmony types (complementary, analogous, triadic, monochromatic)
-- **Live Preview** — See colors applied on real UI components (navbar, hero, card, buttons) with dark/light toggle
-- **Multiple Export Formats** — Copy as plain CSS, CSS custom properties, Tailwind classes or JavaScript object
-- **WCAG Contrast Checker** — Automatic accessibility rating (AA / AAA / Fail) for every color pair
-- **Shareable URL** — Every combination generates a unique URL to share your design
-- **Preset Gallery** — 12 handcrafted gradient presets for quick inspiration
-- **Session History** — Last 6 generated gradients saved as thumbnails, click to restore
+- **Gerador de Gradiente** — Linear, radial e cônico com 2 a 4 cores, controle de ângulo e geração aleatória
+- **Gerador de Paleta** — 5 cores harmônicas a partir de uma cor base com 4 tipos de harmonia (complementar, análoga, triádica, monocromática)
+- **Preview ao Vivo** — Visualize as cores aplicadas em componentes reais (navbar, hero, card, botões) com toggle claro/escuro
+- **Múltiplos Formatos de Export** — Copie como CSS puro, variáveis CSS, classes Tailwind ou objeto JavaScript
+- **Verificador de Contraste WCAG** — Rating automático de acessibilidade (AA / AAA / Fail) para cada par de cores
+- **URL Compartilhável** — Cada combinação gera uma URL única para compartilhar seu design
+- **Galeria de Presets** — 12 gradientes prontos para inspiração rápida
+- **Histórico de Sessão** — Últimos 6 gradientes gerados salvos como miniaturas, clique para restaurar
 
-## Tech Stack
+## Tecnologias
 
 | | |
 |---|---|
 | Framework | React 18 + Vite |
-| Color logic | chroma.js |
-| Icons | Lucide React |
-| Styling | CSS Modules |
+| Lógica de cores | chroma.js |
+| Ícones | Lucide React |
+| Estilos | CSS Modules |
 | Deploy | Vercel |
 
-## Getting Started
+## Como Rodar Localmente
 
 ```bash
-# Clone the repository
+# Clone o repositório
 git clone https://github.com/gabrielsdev6/huelab.git
 cd huelab
 
-# Install dependencies
+# Instale as dependências
 npm install
 
-# Start dev server
+# Inicie o servidor de desenvolvimento
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Abra [http://localhost:5173](http://localhost:5173) no seu navegador.
 
-## Build
+## Build para Produção
 
 ```bash
 npm run build
 ```
 
-## Project Structure
+## Estrutura do Projeto
 
 ```
 src/
-├── components/        # UI components
+├── components/        # Componentes de UI
 │   ├── GradientGenerator
 │   ├── PaletteGenerator
 │   ├── LivePreview
@@ -63,14 +63,14 @@ src/
 │   ├── GradientHistory
 │   └── AboutSection
 ├── hooks/             # useGradient, usePalette
-├── utils/             # colors, contrast, url helpers
-└── data/              # gradient presets
+├── utils/             # colors, contrast, url
+└── data/              # presets de gradiente
 ```
 
-## Author
+## Autor
 
-**Gabriel Pereira** — [@gabrielsdev6](https://github.com/gabrielsdev6)
+Desenvolvido por **Gabriel Pereira** — [@gabrielsdev6](https://github.com/gabrielsdev6)
 
 ---
 
-*Built with React + chroma.js*
+*Feito com React + chroma.js*
